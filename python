@@ -1,0 +1,41 @@
+print ('Hi! welcome the guessing game, press enter to continue')
+
+Enter = input('press the enter key: ')
+
+
+import random as rdm
+a = rdm.randint(1,9)
+count = 0
+clueless = 0
+leaving_soon = 0
+
+while True:
+    dict = {'1': 10,'2': 9,'3': 8,'4': 7,'5': 6,'6': 5,'7': 2,'8': 4,'9': 3, 'exit': 1}
+    guess = input('guess any number from 1-9 or type exit to leave the game:  ')
+    
+    
+    if guess not in dict:
+        clueless += 1
+        print ('wrong entry')
+        if clueless == 3:
+            print ('type exit to leave the game or any number from 1-9')
+        continue
+    
+    elif guess == 'exit':
+        leaving_soon += 1
+        if leaving_soon < 4:
+            print ('Game over! leaving so early!? it is not that hard')
+            break
+        else:
+            print ('game over! thanks for playing, better luck next time.')
+            break
+    else:
+        guess = int(guess)
+        count += 1
+        if guess < a:
+            print ('guess higher!')
+        elif guess > a:
+            print ('guess lower!')
+        elif guess == a:
+            print ('congratulations! you guessed right after', count, 'times')
+            break
