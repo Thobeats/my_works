@@ -18,13 +18,13 @@ while True:
         clueless += 1
         print ('wrong entry')
         if clueless == 3:
-            print ('type exit to leave the game or any number from 1-9')
+            print ('type exit to leave the game or any number from 1-9 to continue playing')
         continue
     
     elif guess == 'exit':
         leaving_soon += 1
         if leaving_soon < 4:
-            print ('Game over! leaving so early!? it is not that hard')
+            print ("Game over! leaving so early!? don't get bored")
             break
         else:
             print ('game over! thanks for playing, better luck next time.')
