@@ -1,4 +1,4 @@
-print ('Hi! welcome the guessing game, press enter to continue')
+print ('Hey there! Welcome, press enter to continue')
 
 Enter = input('press the enter key: ')
 
