@@ -27,7 +27,7 @@ while True:
             print ("Game over! leaving so early!? don't get bored")
             break
         else:
-            print ('game over! thanks for playing, better luck next time.')
+            print ('Game over! thanks for playing, better luck next time.')
             break
     else:
         guess = int(guess)
